@@ -21,32 +21,40 @@ defaults:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.165.0
     steps:
-      - name: Install Hugo CLI
-        uses: peaceiris/actions-hugo@v2
+      - name: Install Hugo CLI (extended)
+        uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: 'latest'
+          hugo-version: '0.165.0'
           extended: true
 
       - name: Checkout
         uses: actions/checkout@v4
         with:
           submodules: recursive
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Tailwind deps
+        run: npm install
 
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
 
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production
-        run: |
-          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+        run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./public
 
   deploy:
     environment:

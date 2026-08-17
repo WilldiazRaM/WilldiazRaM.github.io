@@ -7,13 +7,17 @@ enableInlineShortcodes = true
 theme = "tella"
 enableRobotsTXT = true
 
+# ── CLAVE: autoriza a Hugo a ejecutar el binario de Tailwind v4 ──
+[security]
+  [security.exec]
+  allow = ['^(dart-)?sass$', '^go$', '^git$', '^node$', '^npm$', '^npx$', '^postcss$', '^tailwindcss$']
+
 [params]
 showBlog = false
 mainSections = ['projects']
 googleFonts = true
 
   [params.logo]
-  # Usamos tu foto como logo circular en la barra (las clases van en 'size')
   main = "img/perfil.jpg"
   alt = "Williams Díaz"
   size = "h-10 w-10 rounded-full object-cover"
@@ -80,7 +84,7 @@ series = "series"
     [markup.goldmark.renderer]
     unsafe = true
 
-# ⚠️ NO TOCAR: estos dos bloques son obligatorios para que Tailwind v4 detecte las clases.
+# ⚠️ NO TOCAR: obligatorios para Tailwind v4
 [build]
   [build.buildStats]
   enable = true
