@@ -41,8 +41,10 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install Tailwind deps
-        run: npm install
+      - name: Install Tailwind CLI globally
+        run: |
+          npm install -g tailwindcss
+          npm install
 
       - name: Setup Pages
         id: pages
