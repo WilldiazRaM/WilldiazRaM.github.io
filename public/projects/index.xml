@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Proyectos &amp; Casos de Estudio on Williams Díaz | DevSecOps &amp; Cloud</title>
+		<link>http://localhost:1313/projects/</link>
+		<description>Recent content in Proyectos &amp; Casos de Estudio on Williams Díaz | DevSecOps &amp; Cloud</description>
+		<generator>Hugo</generator>
+		<language>es-CL</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 16 Aug 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>IVS Energy: Arquitectura SSG, SEO Técnico y Crecimiento Orgánico</title>
+				<link>http://localhost:1313/projects/ivs-energy/</link>
+				<pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/projects/ivs-energy/</guid>
+				<description>&lt;p&gt;&lt;span class=&#34;badge badge--hardened&#34;&gt;&lt;span class=&#34;dot&#34;&gt;&lt;/span&gt; En producción · ivsenergy.cl&lt;/span&gt;&lt;/p&gt;&#xA;&lt;ul class=&#34;chips&#34;&gt;&#xD;&#xA;  &lt;li class=&#34;chip chip--hardened&#34;&gt;Next.js 14 (SSG)&lt;/li&gt;&#xD;&#xA;  &lt;li class=&#34;chip chip--hardened&#34;&gt;TypeScript&lt;/li&gt;&#xD;&#xA;  &lt;li class=&#34;chip chip--hardened&#34;&gt;Vercel Edge&lt;/li&gt;&#xD;&#xA;  &lt;li class=&#34;chip chip--hardened&#34;&gt;JSON-LD / SEO&lt;/li&gt;&#xD;&#xA;&lt;/ul&gt;&#xD;&#xA;&lt;div class=&#34;stat-grid&#34;&gt;&#xD;&#xA;  &lt;div class=&#34;stat&#34;&gt;&lt;b&gt;1.13s → &amp;lt;0.2s&lt;/b&gt;&lt;span&gt;TTFB en móvil&lt;/span&gt;&lt;/div&gt;&#xD;&#xA;  &lt;div class=&#34;stat&#34;&gt;&lt;b&gt;80+&lt;/b&gt;&lt;span&gt;clics orgánicos / 28 días&lt;/span&gt;&lt;/div&gt;&#xD;&#xA;  &lt;div class=&#34;stat&#34;&gt;&lt;b&gt;Core Web Vitals&lt;/b&gt;&lt;span&gt;en verde&lt;/span&gt;&lt;/div&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h3 id=&#34;el-contexto-de-una-página-básica-a-un-motor-de-ventas&#34;&gt;El contexto: de una página básica a un motor de ventas&lt;/h3&gt;&#xA;&lt;p&gt;IVS Energy, una PYME de ingeniería eléctrica y mantenimiento de calderas, pidió inicialmente un sitio informativo con constructores básicos (tipo Google Sites). Tras analizar su modelo de negocio, redefiní el alcance: no necesitaban un &amp;ldquo;folleto digital&amp;rdquo;, sino una infraestructura optimizada para &lt;strong&gt;captar clientes orgánicamente&lt;/strong&gt; desde los motores de búsqueda.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>SINTEREC: Arquitectura Desacoplada, Migración y Operaciones Web</title>
+				<link>http://localhost:1313/projects/sinterec/</link>
+				<pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/projects/sinterec/</guid>
+				<description>&lt;p&gt;&lt;span class=&#34;badge badge--hardened&#34;&gt;&lt;span class=&#34;dot&#34;&gt;&lt;/span&gt; En producción · sinterec.cl&lt;/span&gt;&lt;/p&gt;&#xA;&lt;ul class=&#34;chips&#34;&gt;&#xD;&#xA;  &lt;li class=&#34;chip chip--hardened&#34;&gt;Node.js · Express&lt;/li&gt;&#xD;&#xA;  &lt;li class=&#34;chip chip--hardened&#34;&gt;React · Redux&lt;/li&gt;&#xD;&#xA;  &lt;li class=&#34;chip chip--hardened&#34;&gt;MySQL / MariaDB&lt;/li&gt;&#xD;&#xA;  &lt;li class=&#34;chip chip--hardened&#34;&gt;JWT · CSP · rate limiting&lt;/li&gt;&#xD;&#xA;&lt;/ul&gt;&#xD;&#xA;&lt;div class=&#34;stat-grid&#34;&gt;&#xD;&#xA;  &lt;div class=&#34;stat&#34;&gt;&lt;b&gt;1.061&lt;/b&gt;&lt;span&gt;usuarios totales&lt;/span&gt;&lt;/div&gt;&#xD;&#xA;  &lt;div class=&#34;stat&#34;&gt;&lt;b&gt;1.039&lt;/b&gt;&lt;span&gt;usuarios activos&lt;/span&gt;&lt;/div&gt;&#xD;&#xA;  &lt;div class=&#34;stat&#34;&gt;&lt;b&gt;8&lt;/b&gt;&lt;span&gt;administradores&lt;/span&gt;&lt;/div&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h3 id=&#34;el-contexto&#34;&gt;El contexto&lt;/h3&gt;&#xA;&lt;p&gt;Este proyecto fue el puente entre la investigación académica (Duoc UC y Codecademy) y la ingeniería en producción. Un ciclo de 6 meses que exigió no solo diseño arquitectónico, sino gestión directa de requerimientos con múltiples &lt;em&gt;stakeholders&lt;/em&gt; (directiva sindical) y resolución de incidentes de red a nivel corporativo.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Auditoría de Postura de Seguridad en Infraestructura Crítica Nacional</title>
+				<link>http://localhost:1313/projects/auditoria-csirt/</link>
+				<pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/projects/auditoria-csirt/</guid>
+				<description>&lt;p&gt;&lt;span class=&#34;badge badge--hardened&#34;&gt;&lt;span class=&#34;dot&#34;&gt;&lt;/span&gt; Divulgación responsable · Hardening&lt;/span&gt;&lt;/p&gt;&#xA;&lt;ul class=&#34;chips&#34;&gt;&#xD;&#xA;  &lt;li class=&#34;chip chip--hardened&#34;&gt;OWASP Secure Headers&lt;/li&gt;&#xD;&#xA;  &lt;li class=&#34;chip chip--hardened&#34;&gt;Análisis pasivo&lt;/li&gt;&#xD;&#xA;  &lt;li class=&#34;chip chip--hardened&#34;&gt;CSIRT de Gobierno&lt;/li&gt;&#xD;&#xA;&lt;/ul&gt;&#xD;&#xA;&lt;h3 id=&#34;el-origen-de-la-academia-a-la-infraestructura-crítica&#34;&gt;El origen: de la academia a la infraestructura crítica&lt;/h3&gt;&#xA;&lt;p&gt;Este caso nace de aplicar en el mundo real lo que estudiaba en paralelo en el &lt;em&gt;Back-End Engineer Path&lt;/em&gt; de Codecademy y en Integración de Plataformas (Duoc UC). Mientras implementaba &lt;code&gt;helmet()&lt;/code&gt; para configurar cabeceras de seguridad HTTP en una API Node.js/Express, me pregunté cómo aplicaban esas mismas mitigaciones (estándar OWASP) infraestructuras de alto perfil a nivel nacional.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>http://localhost:1313/projects/azure-mle/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/projects/azure-mle/</guid>
+				<description></description>
+			</item>
+	</channel>
+</rss>

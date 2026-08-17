@@ -1,0 +1,98 @@
+baseURL = "https://WilldiazRaM.github.io/"
+title = "Williams Díaz | DevSecOps & Cloud"
+author = "Williams Díaz Santander"
+languageCode = "es-CL"
+DefaultContentLanguage = "es"
+enableInlineShortcodes = true
+theme = "tella"
+enableRobotsTXT = true
+
+[params]
+showBlog = false
+mainSections = ['projects']
+googleFonts = true
+
+  [params.logo]
+  # Usamos tu foto como logo circular en la barra (las clases van en 'size')
+  main = "img/perfil.jpg"
+  alt = "Williams Díaz"
+  size = "h-10 w-10 rounded-full object-cover"
+
+  [params.site]
+  name = "Williams Díaz"
+
+  [params.icon]
+  bootstrap = true
+
+  [params.share]
+  enable = false
+
+  [params.homepage_meta_tags]
+  meta_description = "Portafolio de Williams Díaz Santander — Cloud, DevOps & Backend Security Engineer."
+  meta_og_title = "Williams Díaz | DevSecOps & Cloud"
+  meta_og_type = "website"
+  meta_og_url = "https://WilldiazRaM.github.io/"
+  meta_og_image = "https://WilldiazRaM.github.io/img/perfil.jpg"
+  meta_og_description = "Backend seguro, Cloud y DevSecOps. Casos reales en producción."
+  meta_twitter_card = "summary_large_image"
+
+[menu]
+  [[menu.main]]
+  identifier = "projects"
+  name = "Proyectos"
+  url = "/projects/"
+  weight = 1
+
+  [[menu.main]]
+  identifier = "github"
+  name = "GitHub"
+  url = "https://github.com/WilldiazRaM"
+  weight = 2
+
+  [[menu.main]]
+  identifier = "linkedin"
+  name = "LinkedIn"
+  url = "https://www.linkedin.com/in/williams-diaz-450749247/"
+  weight = 3
+
+  [[menu.footer]]
+  name = "Inicio"
+  url = "/"
+  weight = 1
+
+  [[menu.footer]]
+  name = "GitHub"
+  url = "https://github.com/WilldiazRaM"
+  weight = 2
+
+  [[menu.footer]]
+  name = "LinkedIn"
+  url = "https://www.linkedin.com/in/williams-diaz-450749247/"
+  weight = 3
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+    unsafe = true
+
+# ⚠️ NO TOCAR: estos dos bloques son obligatorios para que Tailwind v4 detecte las clases.
+[build]
+  [build.buildStats]
+  enable = true
+  [[build.cachebusters]]
+  source = 'assets/notwatching/hugo_stats\.json'
+  target = 'css'
+
+[module]
+  [[module.mounts]]
+  source = 'assets'
+  target = 'assets'
+  [[module.mounts]]
+  disableWatch = true
+  source = 'hugo_stats.json'
+  target = 'assets/notwatching/hugo_stats.json'

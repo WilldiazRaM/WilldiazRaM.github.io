@@ -1,0 +1,127 @@
+/* ============================================================
+   Williams Díaz — Capa DevSecOps sobre Tella (Tailwind v4)
+   Cargada automáticamente por Tella en /css/custom.css
+   ============================================================ */
+
+:root {
+  --dsx-ink: #0d1117;
+  --dsx-surface: #131a24;
+  --dsx-surface-2: #182231;
+  --dsx-line: #223041;
+  --dsx-text: #c9d4e0;
+  --dsx-muted: #7d8fa3;
+  --dsx-signal: #3fb950;
+  --dsx-cyan: #39c5cf;
+  --dsx-amber: #d29922;
+  --dsx-danger: #f85149;
+  --dsx-mono: ui-monospace, "JetBrains Mono", "Fira Code", "SFMono-Regular", Menlo, monospace;
+}
+
+/* ---------- Home DevSecOps (override de index.html) ---------- */
+.dsx-home { background: var(--dsx-ink); color: var(--dsx-text); }
+.dsx-hero {
+  background: radial-gradient(1100px 380px at 50% -12%, #10222c, var(--dsx-ink) 62%);
+  text-align: center; padding: 3rem 1rem 3.4rem;
+}
+.dsx-hero .avatar-wrap { margin-bottom: 1.4rem; }
+.dsx-hero h1 { color: #fff; font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.2; margin: .4rem 0 .9rem; font-weight: 700; }
+.dsx-hero .hero-lead { margin: 0 auto 1.2rem; }
+.dsx-hero .chips, .dsx-hero .btn-row { justify-content: center; }
+.dsx-section { max-width: 72rem; margin: 0 auto; padding: 2.6rem 1rem 3.6rem; }
+.dsx-h2 { color: #fff; font-size: 1.8rem; margin: .2rem 0 1.4rem; font-weight: 700; }
+
+.proj-grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+.proj-card {
+  display: block; text-decoration: none !important;
+  border: 1px solid var(--dsx-line); border-radius: 14px; padding: 1.2rem 1.3rem;
+  background: linear-gradient(160deg, var(--dsx-surface), var(--dsx-surface-2));
+  transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+}
+.proj-card:hover { transform: translateY(-3px); border-color: var(--dsx-cyan); box-shadow: 0 10px 34px rgba(0,0,0,.4); }
+.proj-card time { font-family: var(--dsx-mono); font-size: .72rem; color: var(--dsx-muted); }
+.proj-card h3 { color: #fff; margin: .3rem 0 .6rem; font-size: 1.05rem; }
+.proj-card .chips { margin: .4rem 0 0; }
+
+/* ---------- Avatar tech (firma visual) ---------- */
+.avatar-wrap { display: flex; flex-direction: column; align-items: center; gap: .8rem; }
+.avatar-tech { position: relative; width: 170px; height: 170px; }
+.avatar-tech .ring {
+  position: absolute; inset: 0; border-radius: 50%;
+  background: conic-gradient(from 0deg, var(--dsx-signal), var(--dsx-cyan) 25%, transparent 55%, var(--dsx-signal));
+  animation: dsx-spin 4.5s linear infinite;
+}
+.avatar-tech .ring::after { content: ""; position: absolute; inset: 6px; border-radius: 50%; background: var(--dsx-ink); }
+.avatar-tech img {
+  position: absolute; inset: 12px; z-index: 2;
+  width: calc(100% - 24px); height: calc(100% - 24px);
+  border-radius: 50%; object-fit: cover; border: 1px solid var(--dsx-line);
+  filter: grayscale(.3) contrast(1.05);
+  transition: filter .35s ease, transform .35s ease, box-shadow .35s ease;
+}
+.avatar-tech:hover img { filter: grayscale(0); transform: scale(1.03); box-shadow: 0 0 26px color-mix(in srgb, var(--dsx-signal) 45%, transparent); }
+@keyframes dsx-spin { to { transform: rotate(360deg); } }
+
+/* ---------- Eyebrow tipo log ---------- */
+.eyebrow { font-family: var(--dsx-mono); font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: var(--dsx-signal); display: inline-flex; align-items: center; gap: .5ch; margin: 0 0 .4rem; }
+.eyebrow::before { content: "›"; color: var(--dsx-cyan); }
+
+/* ---------- Chips estilo flag CLI ---------- */
+.chips { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0 1.4rem; padding: 0; list-style: none; }
+.chip { font-family: var(--dsx-mono); font-size: .78rem; padding: .28rem .6rem; border: 1px solid var(--dsx-line); border-radius: 6px; background: var(--dsx-surface); color: var(--dsx-text); display: inline-flex; align-items: center; gap: .45ch; transition: border-color .18s ease, transform .18s ease; }
+.chip:hover { border-color: var(--dsx-cyan); transform: translateY(-1px); }
+.chip::before { content: "●"; font-size: .6em; color: var(--dsx-muted); }
+.chip--hardened::before { color: var(--dsx-signal); }
+.chip--progress::before { color: var(--dsx-amber); }
+.chip--soon::before { color: var(--dsx-cyan); }
+
+/* ---------- Badges ---------- */
+.badge { font-family: var(--dsx-mono); font-size: .72rem; font-weight: 600; padding: .22rem .55rem; border-radius: 999px; display: inline-flex; align-items: center; gap: .5ch; border: 1px solid transparent; }
+.badge--hardened { color: var(--dsx-signal); border-color: color-mix(in srgb, var(--dsx-signal) 40%, transparent); background: color-mix(in srgb, var(--dsx-signal) 10%, transparent); }
+.badge--soon { color: var(--dsx-amber); border-color: color-mix(in srgb, var(--dsx-amber) 40%, transparent); background: color-mix(in srgb, var(--dsx-amber) 10%, transparent); }
+.badge .dot { width: .5rem; height: .5rem; border-radius: 50%; background: currentColor; }
+.badge--hardened .dot, .badge--soon .dot { animation: dsx-pulse 1.8s ease-in-out infinite; }
+@keyframes dsx-pulse { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: .35; transform: scale(.7); } }
+
+/* ---------- Callout / evidencia / métricas / botones / próximamente ---------- */
+.content blockquote, article blockquote { border-left: 3px solid var(--dsx-cyan); background: var(--dsx-surface); padding: .9rem 1.1rem; border-radius: 0 8px 8px 0; color: var(--dsx-text); margin: 1.4rem 0; }
+figure.evidence { margin: 1.6rem 0; }
+figure.evidence img { width: 100%; height: auto; display: block; border: 1px solid var(--dsx-line); border-radius: 10px; background: var(--dsx-surface); }
+figure.evidence figcaption { font-family: var(--dsx-mono); font-size: .76rem; color: var(--dsx-muted); margin-top: .55rem; text-align: center; }
+
+.stat-grid { display: grid; gap: .8rem; margin: 1.4rem 0; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
+.stat { border: 1px solid var(--dsx-line); border-radius: 10px; padding: .9rem 1rem; background: linear-gradient(160deg, var(--dsx-surface), var(--dsx-surface-2)); }
+.stat b { display: block; font-size: 1.5rem; line-height: 1.1; color: var(--dsx-signal); font-family: var(--dsx-mono); }
+.stat span { display: block; font-size: .78rem; color: var(--dsx-muted); margin-top: .3rem; }
+
+.btn-row { display: flex; flex-wrap: wrap; gap: .7rem; margin: 1.4rem 0; }
+.btn { font-family: var(--dsx-mono); font-size: .85rem; font-weight: 600; padding: .6rem 1.1rem; border-radius: 8px; border: 1px solid var(--dsx-line); text-decoration: none !important; display: inline-flex; align-items: center; gap: .5ch; transition: transform .18s ease, border-color .18s ease, background .18s ease; }
+.btn:hover { transform: translateY(-2px); }
+.btn--primary { background: var(--dsx-signal); color: #06210f !important; border-color: var(--dsx-signal); }
+.btn--primary:hover { background: color-mix(in srgb, var(--dsx-signal) 85%, white); }
+.btn--ghost { color: var(--dsx-text) !important; }
+.btn--ghost:hover { border-color: var(--dsx-cyan); }
+
+.coming-soon { position: relative; border: 1px dashed color-mix(in srgb, var(--dsx-amber) 50%, var(--dsx-line)); border-radius: 14px; padding: 1.6rem 1.4rem; background: linear-gradient(160deg, var(--dsx-surface), transparent); margin: 1.6rem 0; }
+.coming-soon h3 { margin-top: 0; }
+.coming-soon .eyebrow, .coming-soon .eyebrow::before { color: var(--dsx-amber); }
+
+.hero-lead { font-size: 1.12rem; line-height: 1.7; max-width: 60ch; }
+.hero-lead strong { color: var(--dsx-signal); }
+
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+@media (max-width: 640px) { .stat b { font-size: 1.3rem; } .btn { width: 100%; justify-content: center; } .avatar-tech { width: 140px; height: 140px; } }
+
+/* ---------- Home enriquecido + nav oscura (añadido) ---------- */
+.dsx-text { color: var(--dsx-text); line-height: 1.7; max-width: 65ch; margin: 0 0 1rem; }
+.dsx-sub { font-family: var(--dsx-mono); font-size: .82rem; color: var(--dsx-cyan); margin: 1.2rem 0 .5rem; letter-spacing: .04em; }
+.dsx-cta { border-top: 1px solid var(--dsx-line); }
+.proj-card .dsx-text { margin: .3rem 0 0; font-size: .9rem; color: var(--dsx-muted); }
+
+/* Nav oscura */
+.dsx-nav { background: var(--dsx-ink); border-bottom: 1px solid var(--dsx-line); }
+.dsx-brand { color: #fff; font-weight: 600; letter-spacing: .02em; text-decoration: none; }
+.dsx-navlink { color: var(--dsx-text); }
+.dsx-navlink:hover { color: var(--dsx-cyan); }
+/* hamburguesa visible sobre fondo oscuro */
+.mopen span { background: var(--dsx-text) !important; }
+.mopen.is-open span { background: #fff !important; }

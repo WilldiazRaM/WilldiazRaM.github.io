@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>MySQL on Williams Díaz | DevSecOps &amp; Cloud</title>
+		<link>http://localhost:1313/tags/mysql/</link>
+		<description>Recent content in MySQL on Williams Díaz | DevSecOps &amp; Cloud</description>
+		<generator>Hugo</generator>
+		<language>es-CL</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>SINTEREC: Arquitectura Desacoplada, Migración y Operaciones Web</title>
+				<link>http://localhost:1313/projects/sinterec/</link>
+				<pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/projects/sinterec/</guid>
+				<description>&lt;p&gt;&lt;span class=&#34;badge badge--hardened&#34;&gt;&lt;span class=&#34;dot&#34;&gt;&lt;/span&gt; En producción · sinterec.cl&lt;/span&gt;&lt;/p&gt;&#xA;&lt;ul class=&#34;chips&#34;&gt;&#xD;&#xA;  &lt;li class=&#34;chip chip--hardened&#34;&gt;Node.js · Express&lt;/li&gt;&#xD;&#xA;  &lt;li class=&#34;chip chip--hardened&#34;&gt;React · Redux&lt;/li&gt;&#xD;&#xA;  &lt;li class=&#34;chip chip--hardened&#34;&gt;MySQL / MariaDB&lt;/li&gt;&#xD;&#xA;  &lt;li class=&#34;chip chip--hardened&#34;&gt;JWT · CSP · rate limiting&lt;/li&gt;&#xD;&#xA;&lt;/ul&gt;&#xD;&#xA;&lt;div class=&#34;stat-grid&#34;&gt;&#xD;&#xA;  &lt;div class=&#34;stat&#34;&gt;&lt;b&gt;1.061&lt;/b&gt;&lt;span&gt;usuarios totales&lt;/span&gt;&lt;/div&gt;&#xD;&#xA;  &lt;div class=&#34;stat&#34;&gt;&lt;b&gt;1.039&lt;/b&gt;&lt;span&gt;usuarios activos&lt;/span&gt;&lt;/div&gt;&#xD;&#xA;  &lt;div class=&#34;stat&#34;&gt;&lt;b&gt;8&lt;/b&gt;&lt;span&gt;administradores&lt;/span&gt;&lt;/div&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h3 id=&#34;el-contexto&#34;&gt;El contexto&lt;/h3&gt;&#xA;&lt;p&gt;Este proyecto fue el puente entre la investigación académica (Duoc UC y Codecademy) y la ingeniería en producción. Un ciclo de 6 meses que exigió no solo diseño arquitectónico, sino gestión directa de requerimientos con múltiples &lt;em&gt;stakeholders&lt;/em&gt; (directiva sindical) y resolución de incidentes de red a nivel corporativo.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

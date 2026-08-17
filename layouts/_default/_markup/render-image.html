@@ -1,0 +1,5 @@
+{{- /* Convierte ![caption](/img/x.jpg) en una figura de evidencia con pie de foto */ -}}
+<figure class="evidence">
+  <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}"{{ with .Title }} title="{{ . }}"{{ end }} loading="lazy" />
+  {{- with .Text }}<figcaption>{{ . }}</figcaption>{{ end -}}
+</figure>

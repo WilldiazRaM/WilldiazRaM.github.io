@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Hardening on Williams Díaz | DevSecOps &amp; Cloud</title>
+		<link>http://localhost:1313/tags/hardening/</link>
+		<description>Recent content in Hardening on Williams Díaz | DevSecOps &amp; Cloud</description>
+		<generator>Hugo</generator>
+		<language>es-CL</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 01 Jul 2024 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/hardening/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Auditoría de Postura de Seguridad en Infraestructura Crítica Nacional</title>
+				<link>http://localhost:1313/projects/auditoria-csirt/</link>
+				<pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/projects/auditoria-csirt/</guid>
+				<description>&lt;p&gt;&lt;span class=&#34;badge badge--hardened&#34;&gt;&lt;span class=&#34;dot&#34;&gt;&lt;/span&gt; Divulgación responsable · Hardening&lt;/span&gt;&lt;/p&gt;&#xA;&lt;ul class=&#34;chips&#34;&gt;&#xD;&#xA;  &lt;li class=&#34;chip chip--hardened&#34;&gt;OWASP Secure Headers&lt;/li&gt;&#xD;&#xA;  &lt;li class=&#34;chip chip--hardened&#34;&gt;Análisis pasivo&lt;/li&gt;&#xD;&#xA;  &lt;li class=&#34;chip chip--hardened&#34;&gt;CSIRT de Gobierno&lt;/li&gt;&#xD;&#xA;&lt;/ul&gt;&#xD;&#xA;&lt;h3 id=&#34;el-origen-de-la-academia-a-la-infraestructura-crítica&#34;&gt;El origen: de la academia a la infraestructura crítica&lt;/h3&gt;&#xA;&lt;p&gt;Este caso nace de aplicar en el mundo real lo que estudiaba en paralelo en el &lt;em&gt;Back-End Engineer Path&lt;/em&gt; de Codecademy y en Integración de Plataformas (Duoc UC). Mientras implementaba &lt;code&gt;helmet()&lt;/code&gt; para configurar cabeceras de seguridad HTTP en una API Node.js/Express, me pregunté cómo aplicaban esas mismas mitigaciones (estándar OWASP) infraestructuras de alto perfil a nivel nacional.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

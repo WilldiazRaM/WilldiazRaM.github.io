@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Tags on Williams Díaz | DevSecOps &amp; Cloud</title>
+		<link>http://localhost:1313/tags/</link>
+		<description>Recent content in Tags on Williams Díaz | DevSecOps &amp; Cloud</description>
+		<generator>Hugo</generator>
+		<language>es-CL</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 16 Aug 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Data-Driven</title>
+				<link>http://localhost:1313/tags/data-driven/</link>
+				<pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/tags/data-driven/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Next.js</title>
+				<link>http://localhost:1313/tags/next.js/</link>
+				<pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/tags/next.js/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>SEO Técnico</title>
+				<link>http://localhost:1313/tags/seo-t%C3%A9cnico/</link>
+				<pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/tags/seo-t%C3%A9cnico/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Vercel</title>
+				<link>http://localhost:1313/tags/vercel/</link>
+				<pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/tags/vercel/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Web Performance</title>
+				<link>http://localhost:1313/tags/web-performance/</link>
+				<pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/tags/web-performance/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Enterprise Routing</title>
+				<link>http://localhost:1313/tags/enterprise-routing/</link>
+				<pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/tags/enterprise-routing/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Gestión De Incidentes</title>
+				<link>http://localhost:1313/tags/gesti%C3%B3n-de-incidentes/</link>
+				<pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/tags/gesti%C3%B3n-de-incidentes/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>MySQL</title>
+				<link>http://localhost:1313/tags/mysql/</link>
+				<pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/tags/mysql/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Node.js</title>
+				<link>http://localhost:1313/tags/node.js/</link>
+				<pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/tags/node.js/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Seguridad Defensiva</title>
+				<link>http://localhost:1313/tags/seguridad-defensiva/</link>
+				<pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/tags/seguridad-defensiva/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>CSIRT</title>
+				<link>http://localhost:1313/tags/csirt/</link>
+				<pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/tags/csirt/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>DevSecOps</title>
+				<link>http://localhost:1313/tags/devsecops/</link>
+				<pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/tags/devsecops/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Hardening</title>
+				<link>http://localhost:1313/tags/hardening/</link>
+				<pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/tags/hardening/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>OWASP</title>
+				<link>http://localhost:1313/tags/owasp/</link>
+				<pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/tags/owasp/</guid>
+				<description></description>
+			</item>
+	</channel>
+</rss>

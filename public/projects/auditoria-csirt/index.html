@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<meta charset="utf-8">
+<title>Williams Díaz | DevSecOps &amp; Cloud | Auditoría de Postura de Seguridad en Infraestructura Crítica Nacional</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="/favicon-64x64.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Williams Díaz | DevSecOps &amp; Cloud" />
+<link rel="manifest" href="/site.webmanifest" />
+
+
+<link href='/css/bootstrap-icons.min.css' rel="stylesheet" type="text/css">
+
+
+  
+  
+    
+      <link rel="stylesheet" href="/css/style.css">
+    
+  
+
+
+
+<link rel="stylesheet" href='/css/custom.css'>
+
+
+<meta property="og:site_name" content="Williams Díaz | DevSecOps &amp; Cloud" />
+<meta property="og:title" content="Auditoría de Postura de Seguridad en Infraestructura Crítica Nacional | Williams Díaz | DevSecOps &amp; Cloud" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://localhost:1313/projects/auditoria-csirt/" />
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Auditoría de Postura de Seguridad en Infraestructura Crítica Nacional">
+
+
+<meta property="og:image" content="https://WilldiazRaM.github.io/img/perfil.jpg">
+
+<meta name="description" content=" Divulgación responsable · Hardening
+
+  OWASP Secure Headers
+  Análisis pasivo
+  CSIRT de Gobierno
+
+El origen: de la academia a la infraestructura crítica
+Este caso nace de aplicar en el mundo real lo que estudiaba en paralelo en el Back-End Engineer Path de Codecademy y en Integración de Plataformas (Duoc UC). Mientras implementaba helmet() para configurar cabeceras de seguridad HTTP en una API Node.js/Express, me pregunté cómo aplicaban esas mismas mitigaciones (estándar OWASP) infraestructuras de alto perfil a nivel nacional." />
+<meta property="og:description" content=" Divulgación responsable · Hardening
+
+  OWASP Secure Headers
+  Análisis pasivo
+  CSIRT de Gobierno
+
+El origen: de la academia a la infraestructura crítica
+Este caso nace de aplicar en el mundo real lo que estudiaba en paralelo en el Back-End Engineer Path de Codecademy y en Integración de Plataformas (Duoc UC). Mientras implementaba helmet() para configurar cabeceras de seguridad HTTP en una API Node.js/Express, me pregunté cómo aplicaban esas mismas mitigaciones (estándar OWASP) infraestructuras de alto perfil a nivel nacional." />
+<meta property="twitter:description" content=" Divulgación responsable · Hardening
+
+  OWASP Secure Headers
+  Análisis pasivo
+  CSIRT de Gobierno
+
+El origen: de la academia a la infraestructura crítica
+Este caso nace de aplicar en el mundo real lo que estudiaba en paralelo en el Back-End Engineer Path de Codecademy y en Integración de Plataformas (Duoc UC). Mientras implementaba helmet() para configurar cabeceras de seguridad HTTP en una API Node.js/Express, me pregunté cómo aplicaban esas mismas mitigaciones (estándar OWASP) infraestructuras de alto perfil a nivel nacional." />
+
+
+</head>
+
+<body class="flex flex-col min-h-screen">
+  <main class="grow"><header>
+    <div id="overlay" class="fixed inset-0 bg-black/90 backdrop-blur-md flex justify-center items-center z-50 transition-opacity duration-300 opacity-0 pointer-events-none" aria-hidden="true">
+        <ul class="text-center list-none text-white space-y-6">
+            
+            <li class="p-2 transform transition-transform hover:scale-110">
+                <a href="/projects/" class="text-4xl font-semibold hover:text-gray-300 transition-colors">
+                    <span>Proyectos</span>
+                </a>
+            </li>
+            
+            <li class="p-2 transform transition-transform hover:scale-110">
+                <a href="https://github.com/WilldiazRaM" class="text-4xl font-semibold hover:text-gray-300 transition-colors">
+                    <span>GitHub</span>
+                </a>
+            </li>
+            
+            <li class="p-2 transform transition-transform hover:scale-110">
+                <a href="https://www.linkedin.com/in/williams-diaz-450749247/" class="text-4xl font-semibold hover:text-gray-300 transition-colors">
+                    <span>LinkedIn</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <nav class="dsx-nav flex items-center justify-between flex-wrap p-6">
+        <div class="flex items-center shrink-0 mr-6">
+            <a href="http://localhost:1313/"><img alt="Williams Díaz"
+                    class="h-10 w-10 rounded-full object-cover mr-3" src="/img/perfil.jpg"></a>
+            <a href="http://localhost:1313/" class="dsx-brand">Williams Díaz</a>
+        </div>
+        <div class="block lg:hidden">
+            <div id="hamburgerbtn" class="flex cursor-pointer items-center w-14 h-10 py-2 rounded mopen">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </div>
+        </div>
+        <div class="hidden w-full grow lg:flex lg:items-center lg:w-auto" id="mobileMenu">
+            <div class="text-lg lg:grow"></div>
+            <div class="text-lg">
+                
+                <a href="/projects/"
+                    class="dsx-navlink duration-200 block mt-4 lg:inline-block lg:mt-0 mr-8">
+                    Proyectos
+                </a>
+                
+                <a href="https://github.com/WilldiazRaM"
+                    class="dsx-navlink duration-200 block mt-4 lg:inline-block lg:mt-0 mr-8">
+                    GitHub
+                </a>
+                
+                <a href="https://www.linkedin.com/in/williams-diaz-450749247/"
+                    class="dsx-navlink duration-200 block mt-4 lg:inline-block lg:mt-0 mr-8">
+                    LinkedIn
+                </a>
+                
+            </div>
+        </div>
+    </nav>
+</header><div class="scroll-top rounded-full flex items-center justify-center">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"/>
+      </svg>
+    </div>
+<div class="mx-auto my-10 max-w-4xl px-4 sm:px-6 lg:px-8">
+  <article class="bg-white p-6 md:p-10 border border-tlgray-200">
+    <header class="mb-8 text-center md:text-left">
+        
+        <h1 class="text-3xl md:text-5xl font-extrabold text-tlgray-800 mb-6 leading-tight">Auditoría de Postura de Seguridad en Infraestructura Crítica Nacional</h1>
+        <div class="flex flex-wrap items-center justify-center md:justify-start text-sm text-tlgray-500 space-x-4 mb-6 border-b border-tlgray-200 pb-6">
+            
+            <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="mr-2" viewBox="0 0 16 16">
+                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+                </svg>
+                <time datetime="2024-07-01T00:00:00Z">Jul 1, 2024</time>
+            </div>
+            
+            
+        </div>
+    </header>
+    <div class="content prose prose-lg max-w-none text-tlgray-700 leading-relaxed mx-auto">
+        <p><span class="badge badge--hardened"><span class="dot"></span> Divulgación responsable · Hardening</span></p>
+<ul class="chips">
+  <li class="chip chip--hardened">OWASP Secure Headers</li>
+  <li class="chip chip--hardened">Análisis pasivo</li>
+  <li class="chip chip--hardened">CSIRT de Gobierno</li>
+</ul>
+<h3 id="el-origen-de-la-academia-a-la-infraestructura-crítica">El origen: de la academia a la infraestructura crítica</h3>
+<p>Este caso nace de aplicar en el mundo real lo que estudiaba en paralelo en el <em>Back-End Engineer Path</em> de Codecademy y en Integración de Plataformas (Duoc UC). Mientras implementaba <code>helmet()</code> para configurar cabeceras de seguridad HTTP en una API Node.js/Express, me pregunté cómo aplicaban esas mismas mitigaciones (estándar OWASP) infraestructuras de alto perfil a nivel nacional.</p>
+<h3 id="tarea">Tarea</h3>
+<p>Evaluar la postura de seguridad perimetral —usando únicamente información <strong>públicamente verificable</strong>— para medir la aplicación de controles de <em>hardening</em> (defensa en profundidad) en plataformas críticas del Estado.</p>
+<h3 id="acción-y-hallazgos">Acción y hallazgos</h3>
+<p>Ejecuté un análisis de cabeceras HTTP con herramienta pública, <strong>sin pruebas de penetración ni interacción con sesiones de usuarios</strong>, sobre dos objetivos: el portal <code>bancoestado.cl</code> y el servicio de autenticación <code>accounts.claveunica.cl</code>.</p>
+<ul>
+<li><strong>Portal bancario (<code>bancoestado.cl</code>):</strong> calificación <strong>F</strong>, con ausencia de cabeceras fundamentales como <code>Strict-Transport-Security</code> (HSTS), <code>Content-Security-Policy</code> (CSP) y <code>X-Frame-Options</code>. Severidad <strong>baja–media</strong>: no son fallas explotables por sí solas, sino controles de defensa en profundidad ausentes.</li>
+<li><strong>Clave Única (<code>accounts.claveunica.cl</code>):</strong> se observó un patrón equivalente, lo que sugería una brecha de <em>hardening</em> transversal en la capa de transporte de servicios críticos, no un caso aislado.</li>
+</ul>
+<!-- NOTA PARA TI: para claveunica.cl no tienes captura propia. Si no la agregas, mantén esto como "observación reportada", no como resultado con evidencia publicada. -->
+<p><figure class="evidence">
+  <img src="/img/vulns_banco_estado_julio_2024.jpg" alt="Análisis de cabeceras HTTP de bancoestado.cl (01 Jul 2024): calificación F por ausencia de controles de hardening." loading="lazy" /><figcaption>Análisis de cabeceras HTTP de bancoestado.cl (01 Jul 2024): calificación F por ausencia de controles de hardening.</figcaption></figure></p>
+<p>Tras revisarlo primero en un entorno académico, documenté los hallazgos de forma estructurada y los escalé por el canal oficial.</p>
+<h3 id="resultado-divulgación-responsable">Resultado: divulgación responsable</h3>
+<p>Bajo el principio de divulgación responsable, los hallazgos fueron reportados al <strong>CSIRT de Gobierno</strong> a mediados de 2024, sin difusión pública de detalles explotables al momento del reporte.</p>
+<h3 id="contexto-de-industria-hecho-independiente">Contexto de industria (hecho independiente)</h3>
+<p>En el mismo periodo, la institución financiera detectó y denunció un <strong>fraude interno</strong> de alto impacto (<em>insider threat</em>) a raíz de una modificación en sus sistemas, hecho ampliamente cubierto por la prensa.</p>
+<div style="display:flex; gap:1rem; flex-wrap:wrap;">
+<p><figure class="evidence">
+  <img src="/img/declaracion_fiscal_julio_2024.jpg" alt="La Tercera: la Fiscalía inició diligencias tras detectarse el desbalance por una modificación de sistemas en julio de 2024." loading="lazy" /><figcaption>La Tercera: la Fiscalía inició diligencias tras detectarse el desbalance por una modificación de sistemas en julio de 2024.</figcaption></figure></p>
+<p><figure class="evidence">
+  <img src="/img/cooperativa_prensa_banco_estado_jul24.png" alt="Cooperativa: la PDI detalló el mecanismo del fraude interno (uso de cuentas en desuso)." loading="lazy" /><figcaption>Cooperativa: la PDI detalló el mecanismo del fraude interno (uso de cuentas en desuso).</figcaption></figure></p>
+</div>
+<p>Seamos rigurosos: <strong>mi reporte de cabeceras HTTP y ese fraude interno pertenecen a vectores de ataque completamente distintos y no tienen relación causal.</strong> El fraude se originó en el abuso de accesos privilegiados sobre cuentas rezagadas; las cabeceras son una observación de perímetro. <strong>Coincidencia temporal no es causa.</strong></p>
+<p>Lo que sí muestra la coincidencia es algo real: estaba mirando el lugar correcto. Mientras yo señalaba —desde afuera y de forma responsable— que la madurez de seguridad de esta infraestructura estaba bajo el estándar, la misma institución enfrentaba, por dentro y en otra capa, una crisis de seguridad de escala nacional. Detectar dónde está el riesgo antes de que escale es exactamente lo que aporto en un rol DevSecOps.</p>
+<h3 id="actualización-2026">Actualización (2026)</h3>
+<p>Una nueva verificación pasiva en agosto de 2026 evidenció que la deficiencia de cabeceras <strong>reapareció</strong> en el dominio principal y en un subdominio asociado. Fue nuevamente reportada a la Agencia Nacional de Ciberseguridad (ANCI) por el canal oficial. La persistencia refuerza la lección central: la seguridad debe estandarizarse en el pipeline, no parchearse caso a caso.</p>
+<blockquote>
+<p><strong>Lección DevSecOps:</strong> la seguridad no es un parche final, sino una práctica integral —desde el diseño del backend hasta el monitoreo continuo en producción. El <em>hardening</em> que se aplica en un servidor debe heredarse por defecto en todos los despliegues, y validarse en CI/CD.</p>
+</blockquote>
+
+    </div>
+  </article>
+</div>
+
+  </main><footer class="bg-tlgray-100">
+  
+  <script>
+    function OnClickURL() {
+      const url = document.getElementById("url").dataset.clipboardText;
+      navigator.clipboard.writeText(url).then(function() {
+        alert('Copied the URL and title.');
+      }).catch(function(error) {
+        console.error('Copy failed', error);
+      });
+    }
+  </script>
+  
+  <script>
+    function toggleNav() {
+      const hamburger = document.getElementById("hamburgerbtn");
+      const overlay = document.getElementById("overlay");
+      const body = document.body;
+
+      hamburger.addEventListener("click", function () {
+        overlay.classList.toggle("open");
+        hamburger.classList.toggle("is-open");
+        body.classList.toggle("scroll-lock");
+      });
+    }
+    toggleNav();
+
+    document.querySelector('.scroll-top').addEventListener('click', () => {
+      document.documentElement.scrollTop = 0;
+    });
+  </script>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet" />
+  
+  <div class="flex items-center justify-between flex-wrap bg-gray-800 p-8 text-white">
+    <div class="items-center text-xl text-grey-900 mr-6">
+      Williams Díaz
+    </div>
+    <div class="w-full block grow lg:flex lg:items-center lg:w-auto" id="mobileMenu">
+      <div class="text-lg lg:grow">
+      </div>
+      <div class="flex flex-row items-center text-lg">
+        
+        <a href="/" class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-8">
+          
+          Inicio
+          
+        </a>
+        
+        <a href="https://github.com/WilldiazRaM" class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-8">
+          
+          GitHub
+          
+        </a>
+        
+        <a href="https://www.linkedin.com/in/williams-diaz-450749247/" class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-8">
+          
+          LinkedIn
+          
+        </a>
+        
+      </div>
+    </div>
+  </div>
+  <div class="copy pl-8 py-5 bg-tlgray-700 text-white text-base">
+    &copy; Williams Díaz | DevSecOps &amp; Cloud 2026 All Rights Reserved.
+  </div>
+</footer>
+
+</body>
+
+</html>

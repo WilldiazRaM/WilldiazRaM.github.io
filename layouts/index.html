@@ -1,0 +1,168 @@
+{{ define "meta_tags" }}
+    <meta name="description" content="{{ .Site.Params.homepage_meta_tags.meta_og_description }}" />
+    <meta property="og:title" content="{{ .Site.Params.homepage_meta_tags.meta_og_title }}" />
+    <meta property="og:type" content="{{ .Site.Params.homepage_meta_tags.meta_og_type }}" />
+    <meta property="og:url" content="{{ .Site.Params.homepage_meta_tags.meta_og_url }}" />
+    <meta property="og:image" content="{{ .Site.Params.homepage_meta_tags.meta_og_image }}" />
+    <meta property="og:description" content="{{ .Site.Params.homepage_meta_tags.meta_og_description }}" />
+    <meta name="twitter:card" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_card }}" />
+{{ end }}
+
+{{ define "main" }}
+<div class="dsx-home">
+
+  <!-- ░░ HERO ░░ -->
+  <section class="dsx-hero">
+    <div class="avatar-wrap">
+      <div class="avatar-tech">
+        <span class="ring"></span>
+        <img src="{{ "img/perfil.jpg" | relURL }}" alt="Williams Díaz Santander">
+      </div>
+      <span class="badge badge--hardened"><span class="dot"></span> Disponible para proyectos</span>
+    </div>
+
+    <p class="eyebrow">whoami</p>
+    <h1>Construyo backend seguro y lo llevo a producción.</h1>
+
+    <p class="hero-lead">
+      Ingeniero en Informática enfocado en <strong>Cloud, DevOps y seguridad aplicada</strong>.
+      Diseño, despliego y opero sistemas reales —plataformas en producción para <strong>+1.000 usuarios</strong>—
+      con transición activa hacia <strong>DevSecOps</strong>.
+    </p>
+
+    <ul class="chips">
+      <li class="chip chip--hardened">backend seguro</li>
+      <li class="chip chip--hardened">cloud · azure · aws</li>
+      <li class="chip chip--hardened">ci/cd · docker</li>
+      <li class="chip chip--hardened">devsecops · owasp</li>
+    </ul>
+
+    <div class="btn-row">
+      <a class="btn btn--primary" href="mailto:willdiazsantander@gmail.com">Trabajemos juntos →</a>
+      <a class="btn btn--ghost" href="https://github.com/WilldiazRaM">GitHub</a>
+      <a class="btn btn--ghost" href="https://www.linkedin.com/in/williams-diaz-450749247/">LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- ░░ SOBRE MÍ ░░ -->
+  <section class="dsx-section">
+    <p class="eyebrow">cat sobre-mi.md</p>
+    <h2 class="dsx-h2">Sobre mí</h2>
+    <p class="dsx-text">
+      Combino desarrollo backend sólido con <strong>hardening</strong>, automatización e
+      <strong>investigación responsable de vulnerabilidades</strong>, con reportes escalados a través del
+      <strong>CSIRT nacional</strong>. Trabajo con un enfoque tecnológico agnóstico: me adapto rápido a
+      distintos lenguajes y ecosistemas.
+    </p>
+    <p class="dsx-text">
+      Integro IA generativa en el ciclo de vida del software (SDLC) aplicando manejo cuidadoso de secretos y
+      sanitización de contexto, para proteger información confidencial frente a modelos de terceros.
+    </p>
+  </section>
+
+  <!-- ░░ STACK ░░ -->
+  <section class="dsx-section">
+    <p class="eyebrow">./stack</p>
+    <h2 class="dsx-h2">Stack tecnológico</h2>
+
+    <p class="dsx-sub">☁️ Cloud &amp; DevOps</p>
+    <ul class="chips">
+      <li class="chip chip--hardened">Azure</li><li class="chip chip--hardened">AWS</li>
+      <li class="chip chip--hardened">Docker</li><li class="chip chip--hardened">Terraform</li>
+      <li class="chip chip--hardened">Kubernetes</li><li class="chip chip--hardened">GitHub Actions</li>
+      <li class="chip chip--hardened">Linux</li><li class="chip chip--hardened">Bash</li>
+    </ul>
+
+    <p class="dsx-sub">⚙️ Backend &amp; Data</p>
+    <ul class="chips">
+      <li class="chip chip--hardened">Node.js</li><li class="chip chip--hardened">Express</li>
+      <li class="chip chip--hardened">Python</li><li class="chip chip--hardened">FastAPI</li>
+      <li class="chip chip--hardened">Django</li><li class="chip chip--hardened">PostgreSQL</li>
+      <li class="chip chip--hardened">MySQL / MariaDB</li>
+    </ul>
+
+    <p class="dsx-sub">🖥️ Frontend</p>
+    <ul class="chips">
+      <li class="chip chip--hardened">React</li><li class="chip chip--hardened">Next.js</li>
+      <li class="chip chip--hardened">TypeScript</li><li class="chip chip--hardened">Tailwind</li>
+    </ul>
+
+    <p class="dsx-sub">🔐 Seguridad &amp; Redes</p>
+    <ul class="chips">
+      <li class="chip chip--hardened">OWASP</li><li class="chip chip--hardened">Nmap</li>
+      <li class="chip chip--hardened">Wireshark</li><li class="chip chip--hardened">JWT</li>
+      <li class="chip chip--hardened">Parrot OS</li>
+    </ul>
+  </section>
+
+  <!-- ░░ PROYECTOS ░░ -->
+  <section class="dsx-section">
+    <p class="eyebrow">./casos de estudio</p>
+    <h2 class="dsx-h2">Proyectos</h2>
+    <div class="proj-grid">
+      {{ range (where site.RegularPages "Section" "projects").ByDate.Reverse }}
+      {{ if .Title }}
+      <a class="proj-card" href="{{ .RelPermalink }}">
+        <time>{{ .Date.Format "Jan 2006" }}</time>
+        <h3>{{ .Title }}</h3>
+        {{ with .Params.tags }}
+        <ul class="chips">
+          {{ range first 4 . }}<li class="chip chip--hardened">{{ . }}</li>{{ end }}
+        </ul>
+        {{ end }}
+      </a>
+      {{ end }}
+      {{ end }}
+    </div>
+  </section>
+
+  <!-- ░░ SNAPSHOT DE SEGURIDAD ░░ -->
+  <section class="dsx-section">
+    <p class="eyebrow">./security-snapshot</p>
+    <h2 class="dsx-h2">Ingeniería de seguridad</h2>
+    <div class="proj-grid">
+      <div class="proj-card">
+        <h3>Autenticación &amp; Acceso</h3>
+        <p class="dsx-text">JWT + bcrypt, OAuth2/OIDC, MFA TOTP, control de roles y sesiones seguras.</p>
+      </div>
+      <div class="proj-card">
+        <h3>Hardening Backend</h3>
+        <p class="dsx-text">Cabeceras HTTP (CSP, HSTS, X-Frame-Options), rate limiting y validación de entradas.</p>
+      </div>
+      <div class="proj-card">
+        <h3>Testing de Red</h3>
+        <p class="dsx-text">Nmap, Wireshark y mitmproxy (fingerprints JA3) en entornos controlados.</p>
+      </div>
+      <div class="proj-card">
+        <h3>Automatización</h3>
+        <p class="dsx-text">Scripts en Python para análisis de logs, alertas y apoyo a auditorías.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FORMACIÓN ░░ -->
+  <section class="dsx-section">
+    <p class="eyebrow">./formacion</p>
+    <h2 class="dsx-h2">Formación &amp; certificaciones</h2>
+    <ul class="chips">
+      <li class="chip chip--hardened">Ing. en Informática — Duoc UC (2025)</li>
+      <li class="chip chip--progress">Azure Administrator AZ-104 — en preparación</li>
+      <li class="chip chip--hardened">Back-End Engineer — Codecademy</li>
+      <li class="chip chip--hardened">Cybersecurity Fundamentals — Codecademy</li>
+      <li class="chip chip--hardened">Scan Systems with Nmap &amp; NSE — Codecademy</li>
+      <li class="chip chip--hardened">Cloud Computing AWS — Duoc UC</li>
+    </ul>
+  </section>
+
+  <!-- ░░ CTA ░░ -->
+  <section class="dsx-section dsx-cta">
+    <h2 class="dsx-h2">¿Trabajemos juntos?</h2>
+    <p class="dsx-text">Disponible para proyectos freelance y roles formales (remoto o híbrido, Región Metropolitana) en Backend seguro, Cloud y DevSecOps.</p>
+    <div class="btn-row">
+      <a class="btn btn--primary" href="mailto:willdiazsantander@gmail.com">Escríbeme →</a>
+      <a class="btn btn--ghost" href="https://www.linkedin.com/in/williams-diaz-450749247/">LinkedIn</a>
+    </div>
+  </section>
+
+</div>
+{{ end }}
