@@ -4,7 +4,7 @@ export const site = {
   name: "Williams Díaz Santander",
   role: "Ingeniero en Informática • Duoc UC",
   brand: "Williams Díaz",
-  company: "Servicios de Desarrollo Web Williams Díaz Santander E.I.R.L.",
+  company: "Servicios de Desarrollo",
   city: "Santiago, Chile",
   url: "https://digital.kyriosgrid.cl",
   title: "Sistemas web que captan clientes | Williams Díaz Santander",
