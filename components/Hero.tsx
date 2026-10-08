@@ -12,7 +12,7 @@ export function Hero() {
       
       <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-5 pb-20 pt-14 md:grid-cols-[1.15fr_0.85fr] md:pb-28 md:pt-24">
         <div>
-          {/* Bloque de Autoridad con Foto */}
+          {/* Bloque de Autoridad con Foto (CORREGIDO EN SU LUGAR) */}
           <div className="mb-6 flex items-center gap-4">
             <div className="relative h-16 w-16 overflow-hidden rounded-full ring-2 ring-blue-500/40 ring-offset-2 ring-offset-slate-950/50">
               <Image
@@ -33,9 +33,7 @@ export function Hero() {
               </p>
             </div>
           </div>
-          <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-blue-500/40 bg-blue-500/10 px-3 py-1 text-xs font-medium text-blue-200">
-            <ShieldCheck size={14} /> {site.badges[0]} · Santiago, Chile
-          </p>
+
           <h1 className="text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
             Sistemas web que{" "}
             <span className="bg-gradient-to-r from-blue-400 to-brand2 bg-clip-text text-transparent">automatizan tu operación</span>{" "}
