@@ -7,6 +7,7 @@ import { ProcessSection } from "@/components/ProcessSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 import { StickyCta } from "@/components/StickyCta";
+import { CredentialsSection } from "@/components/CredentialsSection";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Hero />
         <CasesSection />
         <ServicesSection />
+        <CredentialsSection />
         <RoiCalculator />
         <ProcessSection />
         <ContactSection />

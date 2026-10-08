@@ -2,7 +2,7 @@ import contact from "./contact.json";
 
 export const site = {
   name: "Williams Díaz Santander",
-  role: "Ingeniero de Software",
+  role: "Ingeniero en Informática • Duoc UC",
   brand: "Kyrios Grid",
   company: "Servicios de Desarrollo Web Williams Díaz Santander E.I.R.L.",
   city: "Santiago, Chile",
