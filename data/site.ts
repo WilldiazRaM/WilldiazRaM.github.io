@@ -3,7 +3,7 @@ import contact from "./contact.json";
 export const site = {
   name: "Williams Díaz Santander",
   role: "Ingeniero en Informática • Duoc UC",
-  brand: "Kyrios Grid",
+  brand: "Williams Díaz",
   company: "Servicios de Desarrollo Web Williams Díaz Santander E.I.R.L.",
   city: "Santiago, Chile",
   url: "https://digital.kyriosgrid.cl",
@@ -11,7 +11,11 @@ export const site = {
   description:
     "Desarrollo de software a medida en Santiago: sitios y sistemas que automatizan tu operación, registran cada lead y te avisan en tiempo real. Next.js, PostgreSQL y Azure.",
   ...contact,
-  badges: ["E.I.R.L. Registrada", "Microsoft Founders Hub"],
+  badges: [
+    "Ing. Informático (Duoc UC)",
+    "Microsoft Founders Hub",
+    "Especialista B2B"
+  ],
   stack: ["Next.js", "TypeScript", "React", "Node.js", "PostgreSQL", "Python", "Azure", "DevSecOps"],
   // Se inyectan en build vía variables de entorno (ver docs/DEPLOY.md)
   leadEndpoint: process.env.NEXT_PUBLIC_LEAD_ENDPOINT ?? "",

@@ -6,7 +6,7 @@ import { waLink, WA_FROM_CARD } from "@/lib/links";
 import { TrackedLink } from "@/components/TrackedLink";
 import { GithubIcon, LinkedinIcon } from "@/components/BrandIcons";
 import { projects } from "@/data/projects";
-
+import Image from "next/image";
 // Página utilitaria (tarjeta digital / NFC): no se indexa, para no competir con la home.
 export const metadata: Metadata = {
   title: "Tarjeta digital",
@@ -22,8 +22,18 @@ export default function SmartIdPage() {
     <div className="flex min-h-screen justify-center bg-gray-100 pb-10">
       <div className="w-full max-w-md overflow-hidden bg-white shadow-xl sm:rounded-b-3xl">
         <div className="relative rounded-b-[40px] bg-slate-900 px-6 pb-6 pt-10 text-center text-white shadow-md">
-          <div className="mx-auto mb-3 flex h-24 w-24 items-center justify-center rounded-full bg-white p-1 shadow-lg">
-            <div className="flex h-full w-full items-center justify-center rounded-full bg-slate-800 text-2xl font-bold">WD</div>
+          {/* Foto de perfil con anillo gradiente y efecto hover */}
+          <div className="mx-auto mb-4 flex h-28 w-28 items-center justify-center rounded-full bg-gradient-to-tr from-blue-500 to-purple-500 p-[3px] shadow-xl">
+            <div className="relative h-full w-full overflow-hidden rounded-full border-4 border-slate-900 bg-slate-800">
+              <Image
+                src="/perfil_pic/perfil.jpg"
+                alt={site.name}
+                fill
+                className="object-cover transition-transform duration-500 hover:scale-110"
+                sizes="112px"
+                priority
+              />
+            </div>
           </div>
           <h1 className="text-2xl font-extrabold tracking-tight">{site.name}</h1>
           <p className="mt-1 text-sm font-medium text-blue-400">{site.role}</p>

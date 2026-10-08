@@ -3,13 +3,36 @@ import { site, hasRealPhone } from "@/data/site";
 import { waLink, WA_FROM_WEB } from "@/lib/links";
 import { LeadFlowCard } from "./LeadFlowCard";
 import { TrackedLink } from "./TrackedLink";
+import Image from "next/image";
 
 export function Hero() {
   return (
     <section className="hero-glow relative overflow-hidden border-b border-line/60">
       <div className="grid-lines pointer-events-none absolute inset-0" aria-hidden="true" />
+      
       <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-5 pb-20 pt-14 md:grid-cols-[1.15fr_0.85fr] md:pb-28 md:pt-24">
         <div>
+          {/* Bloque de Autoridad con Foto */}
+          <div className="mb-6 flex items-center gap-4">
+            <div className="relative h-16 w-16 overflow-hidden rounded-full ring-2 ring-blue-500/40 ring-offset-2 ring-offset-slate-950/50">
+              <Image
+                src="/perfil_pic/perfil.jpg"
+                alt="Williams Díaz Santander"
+                fill
+                className="object-cover"
+                sizes="64px"
+                priority
+              />
+            </div>
+            <div className="flex flex-col items-start gap-1">
+              <p className="inline-flex items-center gap-1.5 rounded-full border border-blue-500/40 bg-blue-500/10 px-3 py-1 text-xs font-medium text-blue-200 shadow-sm backdrop-blur-sm">
+                <ShieldCheck size={14} /> {site.badges[0]} · Santiago
+              </p>
+              <p className="pl-1 text-sm font-semibold text-slate-300">
+                Williams Díaz Santander
+              </p>
+            </div>
+          </div>
           <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-blue-500/40 bg-blue-500/10 px-3 py-1 text-xs font-medium text-blue-200">
             <ShieldCheck size={14} /> {site.badges[0]} · Santiago, Chile
           </p>
