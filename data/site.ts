@@ -16,7 +16,19 @@ export const site = {
     "Microsoft Founders Hub",
     "Especialista B2B"
   ],
-  stack: ["Next.js", "TypeScript", "React", "Node.js", "PostgreSQL", "Python", "Azure", "DevSecOps"],
+  stack: [
+  "Next.js", 
+  "TypeScript", 
+  "React", 
+  "Node.js", 
+  "PostgreSQL", 
+  "Python", 
+  "Azure", 
+  "DevSecOps",
+  "Sistemas Resilientes",
+  "Arquitectura Agnostic", 
+  "AI-Assisted Dev"
+],
   // Se inyectan en build vía variables de entorno (ver docs/DEPLOY.md)
   leadEndpoint: process.env.NEXT_PUBLIC_LEAD_ENDPOINT ?? "",
   gaId: process.env.NEXT_PUBLIC_GA_ID ?? "",
