@@ -28,9 +28,9 @@ jobs:
       - run: npm run build
         env:
           # Variables públicas (Settings → Secrets and variables → Actions → Variables)
-          NEXT_PUBLIC_LEAD_ENDPOINT: ${{ vars.NEXT_PUBLIC_LEAD_ENDPOINT }}
-          NEXT_PUBLIC_GA_ID: ${{ vars.NEXT_PUBLIC_GA_ID }}
-          NEXT_PUBLIC_GSC_VERIFICATION: ${{ vars.NEXT_PUBLIC_GSC_VERIFICATION }}
+          NEXT_PUBLIC_LEAD_ENDPOINT: ${{ secrets.NEXT_PUBLIC_LEAD_ENDPOINT }}
+          NEXT_PUBLIC_GA_ID: ${{ secrets.NEXT_PUBLIC_GA_ID }}
+          NEXT_PUBLIC_GSC_VERIFICATION: ${{ secrets.NEXT_PUBLIC_GSC_VERIFICATION }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: out
