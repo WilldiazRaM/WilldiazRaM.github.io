@@ -97,6 +97,5 @@ npm run dev        # http://localhost:3000
 npm run build      # genera out/ para GitHub Pages
 ```
 
-Guía de despliegue, dominio, Search Console y Worker de Telegram: [`docs/DEPLOY.md`](docs/DEPLOY.md).
 
 <sub>Servicios de Desarrollo · Santiago, Chile</sub>
