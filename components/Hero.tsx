@@ -8,20 +8,25 @@ import Image from "next/image";
 export function Hero() {
   return (
     <section className="hero-glow relative overflow-hidden border-b border-line/60">
-      <div className="grid-lines pointer-events-none absolute inset-0" aria-hidden="true" />
-      
+      <div
+        className="grid-lines pointer-events-none absolute inset-0"
+        aria-hidden="true"
+      />
+
       <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-5 pb-20 pt-14 md:grid-cols-[1.15fr_0.85fr] md:pb-28 md:pt-24">
         <div>
           {/* Bloque de Autoridad con Foto (CORREGIDO EN SU LUGAR) */}
           <div className="mb-6 flex items-center gap-4">
             <div className="relative h-16 w-16 overflow-hidden rounded-full ring-2 ring-blue-500/40 ring-offset-2 ring-offset-slate-950/50">
               <Image
-                src="/perfil_pic/perfil.jpg"
-                alt="Williams Díaz Santander"
-                fill
-                className="object-cover"
-                sizes="64px"
-                priority
+                src="/perfil_pic/perfil.webp"
+                alt="Williams Díaz Santander, Ingeniero en Informática"
+                width={480}
+                height={480}
+                sizes="(max-width: 768px) 60vw, 320px"
+                fetchPriority="high"
+                loading="eager"
+                className="h-auto w-full max-w-[320px] rounded-2xl"
               />
             </div>
             <div className="flex flex-col items-start gap-1">
@@ -36,7 +41,9 @@ export function Hero() {
 
           <h1 className="text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
             Sistemas web que{" "}
-            <span className="bg-gradient-to-r from-blue-400 to-brand2 bg-clip-text text-transparent">automatizan tu operación</span>{" "}
+            <span className="bg-gradient-to-r from-blue-400 to-brand2 bg-clip-text text-transparent">
+              automatizan tu operación
+            </span>{" "}
             y capturan clientes.
           </h1>
           <p className="mt-6 max-w-xl text-lg text-muted">
@@ -58,7 +65,8 @@ export function Hero() {
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-xl border border-line bg-card px-6 py-3.5 font-semibold transition hover:border-blue-500/60"
             >
-              <MessageCircle size={18} className="text-emerald-400" /> Hablemos por WhatsApp
+              <MessageCircle size={18} className="text-emerald-400" /> Hablemos
+              por WhatsApp
             </TrackedLink>
           </div>
           <ul className="mt-10 flex flex-wrap gap-2 text-xs text-muted">
