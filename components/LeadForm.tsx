@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { Suspense, useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -8,6 +8,8 @@ import { site } from "@/data/site";
 import { getAttribution, getLeadContext } from "@/lib/attribution";
 import { track } from "@/lib/track";
 import { waLink } from "@/lib/links";
+import { useSearchParams } from "next/navigation";
+import { resolveUtm } from "@/lib/utm";
 
 const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const phoneRe = /^\+?[\d\s()-]{8,16}$/;
@@ -26,7 +28,8 @@ type FormValues = z.infer<typeof schema>;
 
 type Status = "idle" | "sending" | "ok" | "fallback" | "error";
 
-export function LeadForm() {
+export function LeadFormInner() {
+  const searchParams = useSearchParams();
   const { register, handleSubmit, reset, formState: { errors } } = useForm<FormValues>({ resolver: zodResolver(schema) });
   const [status, setStatus] = useState<Status>("idle");
   const [ctx, setCtx] = useState("");
@@ -59,6 +62,7 @@ export function LeadForm() {
       campaign: attr.campaign,
       landing: attr.landing,
       page: window.location.href,
+      utm: resolveUtm(searchParams),
     };
 
     // Sin endpoint configurado: degradamos a WhatsApp para no perder el lead.
@@ -146,5 +150,13 @@ export function LeadForm() {
       </button>
       <p className="text-center text-xs text-muted">Sin spam. Uso tus datos solo para responder tu consulta.</p>
     </form>
+  );
+}
+
+export function LeadForm() {
+  return (
+    <Suspense fallback={<div aria-hidden="true" className="h-[540px] rounded-2xl border border-line bg-card" />}>
+      <LeadFormInner />
+    </Suspense>
   );
 }
