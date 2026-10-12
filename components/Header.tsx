@@ -8,6 +8,7 @@ const nav = [
   { href: "/#servicios", label: "Servicios" },
   { href: "/#calculadora", label: "Calculadora" },
   { href: "/#contacto", label: "Contacto" },
+  { href: "/#faq", label: "FAQ"},
 ];
 
 export function Header() {

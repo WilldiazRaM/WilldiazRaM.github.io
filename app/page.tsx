@@ -8,6 +8,7 @@ import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 import { StickyCta } from "@/components/StickyCta";
 import { CredentialsSection } from "@/components/CredentialsSection";
+import { FaqSection } from "@/components/FaqSection";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <CredentialsSection />
         <RoiCalculator />
         <ProcessSection />
+        <FaqSection />
         <ContactSection />
       </main>
       <Footer />
